@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search City View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SearchCityViewController" id="BYZ-38-t0r" customClass="SearchCityViewController" customModule="CityAirportSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="85"/>
+        </scene>
+        <!--Airports View Controller-->
+        <scene sceneID="8nE-n5-Vfv">
+            <objects>
+                <viewController storyboardIdentifier="AirportsViewController" id="pQk-p2-Vbo" customClass="AirportsViewController" customModule="CityAirportSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s36-RT-wRM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="63E-Z9-r99"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUx-pR-zh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="90"/>
+        </scene>
+        <!--Airport Details View Controller-->
+        <scene sceneID="ftn-pN-xYd">
+            <objects>
+                <viewController storyboardIdentifier="AirportDetailsViewController" id="wCY-8A-NVd" customClass="AirportDetailsViewController" customModule="CityAirportSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wyw-Zc-6ge">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="44x-XV-tp6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="671"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9rL-p0-wF9">
+                                <rect key="frame" x="0.0" y="739" width="414" height="113"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airport Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ntf-as-M9q" userLabel="Airport Name">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JS-RF-ogY">
+                                        <rect key="frame" x="0.0" y="35.5" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgX-0I-bdv">
+                                        <rect key="frame" x="0.0" y="61" width="414" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" red="0.2135925591" green="0.68506956100000005" blue="0.2879453897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RunWay Length" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibe-Wm-g4H">
+                                        <rect key="frame" x="0.0" y="92.5" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gRW-RN-cXY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gRW-RN-cXY" firstAttribute="bottom" secondItem="9rL-p0-wF9" secondAttribute="bottom" constant="10" id="33f-5s-I5C"/>
+                            <constraint firstItem="9rL-p0-wF9" firstAttribute="top" secondItem="44x-XV-tp6" secondAttribute="bottom" constant="24" id="AQV-kR-Aob"/>
+                            <constraint firstItem="gRW-RN-cXY" firstAttribute="trailing" secondItem="9rL-p0-wF9" secondAttribute="trailing" id="Evq-LB-DlZ"/>
+                            <constraint firstItem="44x-XV-tp6" firstAttribute="leading" secondItem="gRW-RN-cXY" secondAttribute="leading" id="az6-oC-Yfq"/>
+                            <constraint firstItem="gRW-RN-cXY" firstAttribute="trailing" secondItem="44x-XV-tp6" secondAttribute="trailing" id="hlz-X0-M8b"/>
+                            <constraint firstItem="44x-XV-tp6" firstAttribute="top" secondItem="gRW-RN-cXY" secondAttribute="top" id="yNR-qg-yXF"/>
+                            <constraint firstItem="9rL-p0-wF9" firstAttribute="leading" secondItem="gRW-RN-cXY" secondAttribute="leading" id="zIc-FN-HDe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="airportNameLabel" destination="Ntf-as-M9q" id="x8k-jf-YuO"/>
+                        <outlet property="countryLabel" destination="hgX-0I-bdv" id="dTY-y4-AMf"/>
+                        <outlet property="distanceLabel" destination="3JS-RF-ogY" id="kVE-EW-5Ye"/>
+                        <outlet property="mapView" destination="44x-XV-tp6" id="B7W-Cq-p5W"/>
+                        <outlet property="runwayLabel" destination="ibe-Wm-g4H" id="LhZ-nq-Nvk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sa0-ro-EUy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876.8115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
