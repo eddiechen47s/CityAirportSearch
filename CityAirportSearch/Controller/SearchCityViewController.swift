@@ -5,6 +5,9 @@
 //  Created by ktrade on 2021/1/11.
 //
 
+// 課程來源：
+// https://www.youtube.com/watch?v=LqCX85XPrJc&list=PLpvpznviFFFIpbUxcDQtDnAbDNP-uIR6R&index=21
+
 import UIKit
 import SnapKit
 import RxSwift
